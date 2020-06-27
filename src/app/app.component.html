@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<ul *ngFor="let data of people">
+  <li  [ngStyle]="{'color':getcolor(data.country)}">
+    {{data.name}}-{{data.country}}</li>
+
+</ul>
+<p [ngClass]="'one two'">ng class using as a string  </p>
+<div *ngFor="let x of users"[ngClass]="'three four'">
+{{x}}
+</div>
